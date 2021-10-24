@@ -1,0 +1,182 @@
+@import "./Themes";
+
+.calc-container{
+    box-sizing: border-box;
+    text-align: center;
+    width: 100vw;
+    padding: 30px;
+    background-color: #ffffff;
+    border-top: 5px solid #004d00;
+    .calc-intro{
+        margin: 0 auto;
+        max-width: 1000px;
+        h2{
+            color: #004d00;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .fas{
+            color: #004d00;
+            display: inline-block;
+            font-size: 28px;
+            margin-left: 10px;
+        }
+        p{
+            margin-top: -5px;
+        }
+    }
+    .intro-btn{
+        @include introButtons();
+    }
+    .calculator{
+        .tabs{
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0px 20px;
+            .tablist{
+                text-align: center;
+                padding-right: 40px;
+                .inactive-tab{
+                    display: inline-block;
+                    list-style: none;
+                    border: 3px solid #d3d3d3;
+                    background-color: #d3d3d3;
+                    margin: 5px 5px 0px 5px;
+                    padding: 5px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+                .active-tab{
+                    display: inline-block;
+                    list-style: none;
+                    border: 3px solid #004d00;
+                    background-color: #ffffff;
+                    margin: 5px 5px 0px 5px;
+                    padding: 5px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+}
+
+.calculator-form{
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 5px 10px;
+    .radio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -25px;
+        .custom-radio{
+            width: 25px;
+            height: 25px;
+            border: 2px solid #004d00;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0px 5px 5px 15px;
+            input{
+                display: none;
+            }
+            input:checked + .checkmark{
+                display: inline-block;
+            }
+            .checkmark{
+                width: calc(100% - 6px);
+                height: calc(100% - 6px);
+                border-radius: 50%;
+                background-color: #004d00;
+                display: none;
+            }
+        }
+        p{
+            display: inline;
+        }
+    }
+    .range-container{
+        display: inline-block;
+        width: 49%;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        }
+        p{
+            input{
+                pointer-events: none;
+                padding: 5px 10px;
+                width: 90px;
+                font-family: 'Baloo Tamma 2', cursive;
+                text-align: center;
+                font-size: 14px;
+                @media screen and (min-width: 500px) {
+                    font-size: 16px;
+                }
+                @media screen and (min-width: 700px) {
+                    font-size: 18px;
+                }
+                @media screen and (min-width: 1000px) {
+                    font-size: 20px;
+                }
+                @media screen and (min-width: 1100px) {
+                    font-size: 22px;
+                }
+                &:active{
+                    background-color: #ffffff;
+                }
+            }
+        }
+        .slider{
+            -webkit-appearance: none;
+            width: 80%;
+            height: 5px;
+            background: #666666;
+            outline: none;
+            margin-bottom: 25px;
+            @media screen and (max-width: 850px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 650px) {
+                width: 70%;
+            }
+            &::-webkit-slider-thumb{
+                -webkit-appearance: none;
+                appearance: none;
+                width: 10px;
+                height: 25px;
+                background: #004d00;
+                cursor: pointer;
+            }
+        }
+    }
+    button{
+        color: #ffffff;
+        background-color: #004d00;
+        border: none;
+        padding: 10px 20px;
+        margin: 25px 0px;
+        cursor: pointer;
+    }
+}
+
+.calculation{
+    display: block;
+    padding: 10px;
+    transition: 1s;
+    border: 3px solid #004d00;
+    .result{
+        font-size: 26px;
+        color: #004d00;
+        display: inline;
+    }
+}
+
+.invisible{
+    display: none;
+    transition: 1s;
+}

@@ -1,0 +1,84 @@
+@import "./Themes";
+
+.carousel-container{
+    width: 100%;
+    .carousel{
+        position: relative;
+        width: 95vw;
+        margin: auto;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        vertical-align: top;
+        overflow-x: hidden;
+        @media screen and (min-width: 900px) {
+            width: 90%;
+        }
+        @media screen and (min-width: 1000px) {
+            width: 80%;
+        }
+        .card{
+            min-width: 100%;
+            height: auto;
+            margin: 0;
+            transition: 0.5s;
+            vertical-align: top;
+            .inner-card{
+                vertical-align: top;
+                background: linear-gradient(to right, #f2f2f2, #ffffff);
+                color: #666666;
+                width: 70%;
+                max-width: 600px;
+                padding: 20px;
+                margin: auto;
+                margin-bottom: 25px;
+                box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
+                border: 3px solid #004d00;
+                @media screen and (min-width: 800px) {
+                    width: 80%;
+                }
+                .fas{
+                    color: #004d00;
+                    text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
+                }
+            }
+        }
+        .carousel-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: #ffffff;
+            color: #000000;
+            opacity: 0.7;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+            @media screen and (min-width: 500px) {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
+        .left{
+            left: 0;
+            span:after{
+                content: '\00ab';
+            }
+        } 
+        .right{
+            right: 0;
+            span:after{
+                content: '\00bb';
+            }
+        }
+    }
+}

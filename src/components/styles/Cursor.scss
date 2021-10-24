@@ -1,0 +1,10 @@
+.cursor{
+    z-index: 10000;
+    background-image: url('../media/icon-small.png');
+    height: 30px;
+    width: 30px;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    position: fixed;
+}

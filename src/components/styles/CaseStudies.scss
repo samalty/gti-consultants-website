@@ -1,0 +1,110 @@
+@import "./Themes";
+
+.carousel-container{
+    h1{
+        text-align: center;
+    }
+}
+
+.cs-carousel{
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    vertical-align: top;
+    overflow-x: hidden;
+    .cs-card{
+        min-width: 100%;
+        height: auto;
+        margin: 0;
+        transition: 0.5s;
+        vertical-align: top;
+        .cs-inner-card{
+            vertical-align: top;
+            background: linear-gradient(to right, #e6e6e6, #ffffff);
+            width: 95%;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 25px;
+            box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.5);
+            @media screen and (min-width: 1200px) {
+                width: 80%;
+            }
+            .card-header{
+                color: #e6e6e6;
+                position: relative;
+                width: 100%;
+                box-sizing: border-box;
+                @include boxShadow();
+                div{
+                    width: 33.33%;
+                    display: inline-block;
+                    background-image: linear-gradient(to bottom, #004d00, #008000);
+                    border: 2px solid #e6e6e6;
+                    box-sizing: border-box;
+                    padding: 15px 30px;
+                    .card-header-text{
+                        font-weight: 500;
+                        text-align: left;
+                        margin: 0px;
+                    }
+                    .fas{
+                        display: none;
+                        @media screen and (min-width: 800px) {
+                            display: inline;
+                            float: right;
+                            font-size: 40px;
+                            margin: 10px 0px 0px 0px;
+                        }
+                        @media screen and (min-width: 890px) {
+                            margin: 10px 5px 0px 0px;
+                        }
+                        @media screen and (min-width: 1000px) {
+                            font-size: 48px;
+                            margin: 10px 10px 0px 0px;
+                        }
+                    }
+                }
+            }
+            .card-detail{
+                padding: 10px 30px;
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .carousel-btn{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        color: #000000;
+        background-color: #ffffff;
+        opacity: 0.7;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+    }
+    .left{
+        left: 0;
+        span:after{
+            content: '\00ab';
+        }
+    } 
+    .right{
+        right: 0;
+        span:after{
+            content: '\00bb';
+        }
+    }
+}

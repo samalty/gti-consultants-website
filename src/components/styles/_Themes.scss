@@ -1,0 +1,245 @@
+/* Navbar */
+
+@mixin navbarUl {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    margin-top: 24px;
+    width: auto;
+    float: right;
+}
+
+@mixin navbarLi {
+    list-style: none;
+    display: inline-block;
+    color: #666666;
+    margin: 5px 35px 0px 0px;
+    font-size: 15.5px;
+    @media screen and (min-width: 1300px) {
+        margin-top: 4px;
+        font-size: 18px;
+    }
+    @media screen and (min-width: 1500px) {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+}
+
+@mixin navbarLink {
+    text-decoration: none;
+    color: #666666;
+}
+
+/* Home page */
+
+@mixin homepageContainers {
+    position: relative;
+    max-width: 1000px;
+    height: 670px;
+    margin: auto;
+    @media screen and (max-width: 1000px) {
+        height: auto;
+    }
+}
+
+@mixin imageMobileWidth {
+    @media screen and (max-width: 1000px) {
+        width: 65%;
+    }
+    @media screen and (max-width: 925px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 850px) {
+        width: 75%;
+    }
+    @media screen and (max-width: 775px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 700px) {
+        width: 85%;
+    }
+    @media screen and (max-width: 625px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 550px) {
+        width: 95%;
+    }
+}
+
+@mixin introButtons {
+    min-width: 200px;
+    width: auto;
+    padding: 15px;
+    color: #004d00;
+    font-size: 20px;
+    border: 2px solid #004d00;
+    cursor: pointer;
+    transition: 0.5s;
+    @include boxShadow();
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    span{
+        display: inline-block;
+        position: relative;
+        transition: 0.3s;
+        &:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.3s;
+        }
+    }
+    &:hover{
+        color: #ffffff;
+        background-color: #004d00;
+        transition: 0.5s;
+        box-shadow: none;
+        span{
+            padding-right: 30px;
+            &:after{
+                opacity: 1;
+                right: 0;
+            }
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #004d00;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    &:focus,
+    &:active {
+        color: #ffffff;
+    }
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+/* Pages */
+
+@mixin titleContainer {
+    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 30px 0px 30px;
+    border-bottom: 5px solid #004d00;
+    @media screen and (min-width: 700px) {
+        padding-top: 95px;
+    }
+    @media screen and (min-width: 1100px) {
+        padding-top: 125px;
+    }
+}
+
+@mixin pageTitle {
+    font-size: 44px;
+    margin: 0px;
+    @media screen and (min-width: 700px) {
+        font-size: 52px;
+    }
+    @media screen and (min-width: 1000px) {
+        font-size: 60px;
+        margin: 0px 0px 0px 25px;
+    }
+}
+
+@mixin pageIntro {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    opacity: 0.8;
+    height: auto;
+    width: 100vw;
+    margin: auto;
+    margin-top: 0px;
+    overflow: hidden;
+    @media screen and (min-width: 900px) {
+        background-attachment: fixed;
+        margin-top: 50px;
+    }
+}
+
+@mixin pageIntroOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(102, 102, 102, 0.5);
+}
+
+@mixin pageIntroText {
+    display: block;
+    height: 100%;
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    margin: auto;
+    h3{
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    }
+}
+
+@mixin boxShadow {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+    box-shadow: 0px 5px 10px 0px rgba(211,211,211,1);
+}
+
+/* Buttons */
+
+@mixin consultationButton {
+    display: block;
+    margin: 30px auto;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    -webkit-box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
+    -moz-box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
+    box-shadow: 5px 5px 5px -2px rgba(255,255,255,1);
+    transition: 0.5s;
+    outline: none;
+    &:hover{
+        background: #ffffff;
+        color: #666666;
+        cursor: pointer;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        transition: 0.5s;
+    }
+    @media screen and (min-width: 1000px) {
+        padding: 25px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,78 @@
+@import "./Themes";
+
+.background{
+    background-color: #ffffff;
+}
+
+.about-intro-container{
+    @include pageIntro();
+    background-image: url('../media/partner.jpg');
+    background-size: 100% auto;
+    @media screen and (min-width: 475px) {
+        background-size: 100% auto;
+    }
+    .about-overlay{
+        @include pageIntroOverlay();
+        .about-intro{
+            @include pageIntroText();
+        }
+    }
+}
+
+.about-text{
+    box-sizing: border-box;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 25px;
+    text-align: left;
+    .img-container{
+        display: none;
+        .about-img{
+            height: 100%;
+            width: auto;
+        }
+        @media screen and (min-width: 800px) {
+            display: inline;
+            float: right;
+            margin-left: 20px;
+            height: 280px;
+            width: auto;
+            margin-right: -50px;
+            transition: .3s;
+        }
+        @media screen and (min-width: 850px) {
+            height: 330px;
+            margin-right: -65px;
+        }
+        @media screen and (min-width: 900px) {
+            height: 380px;
+            margin-right: -80px;
+        }
+        @media screen and (min-width: 1000px) {
+            height: 470px;
+            margin-right: -170px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: -200px;
+        }
+        @media screen and (min-width: 1350px) {
+            margin-right: -225px;
+        }
+        @media screen and (min-width: 1400px) {
+            margin-right: -250px;
+        }
+        @media screen and (min-width: 1450px) {
+            margin-right: -275px;
+        }
+    }
+}
+
+.subhead{
+    font-weight: 500;
+    background-image: linear-gradient(to right, #004d00, #006600);
+    color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 25px;
+}
