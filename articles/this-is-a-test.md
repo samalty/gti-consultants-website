@@ -1,10 +1,10 @@
 ---
 title: This is a Test
-author: Will Jay
-date: 2020-01-03T11:50:02.255Z
+category: Accounting
+date: 2020-10-24T11:50:02.255Z
 thumbnail: /images/pumpbeerthumb.jpg
 ---
 
-# This is just a test post
+# This is just a test article
 
 *Let's see what happens.*
