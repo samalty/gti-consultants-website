@@ -13,10 +13,10 @@ function Navbar() {
         const button = document.getElementById("scrollTop");
         if (window.scrollY > 50) {
             element.classList.add('scrolled');
-        } else element.classList.remove('scrolled');
+        } //else element.classList.remove('scrolled');
         if (window.pageYOffset > 1000) {
             button.classList.add('visible');
-        } else button.classList.remove('visible');
+        } //else button.classList.remove('visible');
     });
     const scrollTop = () => {
         window.scrollTo({ top: 0, scrollBehaviour: 'smooth' });

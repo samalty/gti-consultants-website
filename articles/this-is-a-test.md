@@ -8,4 +8,4 @@ thumbnail: /images/pumpbeerthumb.jpg
 
 # This is just a test article
 
-*Let's see what happens.*
+Let's see what happens.

@@ -86,7 +86,7 @@ h1{
                 @media screen and (min-width: 1000px) {
                     min-height: 290x;
                 }
-                h3{
+                h2{
                     display: block;
                     transition: 1s;
                     color: #ffffff;
@@ -101,7 +101,7 @@ h1{
                 &:hover{
                     background-color: rgba(102, 102, 102, 0.9);
                     transition: 1s;
-                    h3{
+                    h2{
                         display: none;
                         transition: 1s;
                     }
@@ -110,6 +110,9 @@ h1{
                         transition: 1s;
                     }
                 }
+            }
+            .markdown{
+                display: none;
             }
         }
     }

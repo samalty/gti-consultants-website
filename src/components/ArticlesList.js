@@ -1,24 +1,26 @@
 import React from "react";
 import { Link }  from "react-router-dom";
-import articleList from "../articles.json";
+import postList from "../articles.json";
+import Markdown from "react-markdown";
 import './styles/Insights.scss';
 
 const ArticlesList = () => {
-    const excerptList = articleList.map(article => {
-        return article.content.split(" ").slice(0, 20).join(" ") + "..."
+    const excerptList = postList.map(post => {
+        return post.content.split(" ").slice(0, 20).join(" ") + "..."
     })
     return (
-        <div className="insights-container">
+        <div className="latest-articles">
             <h2 className="title">Recent articles</h2>
-            {articleList.length && 
-                articleList.map((post, i) => {
+            {postList.length && 
+                postList.map((post, i) => {
                     return (
                         <div key={i} className="article">
-                            <Link className="links" to={`/post/${post.id}`}>
+                            <Link className="links" to={`/insights/${post.id}`}>
                                 <div className="article-overlay">
-                                    <h3>{post.title}</h3>
+                                    <h2>{post.title}</h2>
                                     <p>{post.description}</p>
                                 </div>
+                                <Markdown source={excerptList[i]} escapeHtml={false} className="markdown" />
                             </Link>
                         </div>
                     )

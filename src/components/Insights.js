@@ -33,9 +33,7 @@ class Insights extends Component {
                     </div>
                 </div>
                 <div className="insights-container">
-                    <div className="latest-articles">
-                        <ArticlesList/>
-                    </div>
+                    <ArticlesList/>
                     <div className="categories">
                         <div className="categories-container">
                             <h2>Browse by category</h2>
