@@ -7,7 +7,7 @@ import './styles/Insights.scss';
 const ArticlesList = () => {
     const excerptList = postList.map(post => {
         return post.content.split(" ").slice(0, 20).join(" ") + "..."
-    })
+    });
     return (
         <div className="latest-articles">
             <h2 className="title">Recent articles</h2>
