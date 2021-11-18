@@ -2,7 +2,7 @@ const path = require("path")
 const fs = require("fs")
 
 const dirPath = path.join(__dirname, "../posts")
-const dirPathPages = path.join(__dirname, "../src/pages/content")
+const dirPathPages = path.join(__dirname, "../src/content")
 let postlist = []
 let pagelist = []
 
@@ -79,7 +79,8 @@ const getPosts = () => {
                 post = {
                     id: timestamp,
                     title: metadata.title ? metadata.title : "No title given",
-                    author: metadata.author ? metadata.author : "No author given",
+                    category: metadata.category ? metadata.category : "No category given",
+                    description: metadata.description ? metadata.description : "No description given",
                     date: publishedDate ? publishedDate : "No date given",
                     time: parsedDate["time"],
                     thumbnail: metadata.thumbnail,

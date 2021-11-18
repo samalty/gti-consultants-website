@@ -1,6 +1,6 @@
 import React from "react";
 import { Link }  from "react-router-dom";
-import postList from "../articles.json";
+import postList from "../posts.json";
 import Markdown from "react-markdown";
 import './styles/Insights.scss';
 
