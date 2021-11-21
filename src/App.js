@@ -7,7 +7,8 @@ import Opportunities from './components/Opportunities';
 import Claims from './components/Claims';
 import Referrals from './components/Referrals';
 import Explained from './components/Explained';
-import Insights from './components/Insights';
+import Insights from './content/Insights';
+import Post from './content/Post';
 import Contact from './components/Contact';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
         <Route exact path="/referrals" component={Referrals} />
         <Route exact path="/r&d_explained" component={Explained} />
         <Route exact path="/insights" component={Insights} />
+        <Route exact path="/insights/:id" render={props => <Post {...props} />} />
         <Route exact path="/contact" component={Contact} />
       </div>
     )

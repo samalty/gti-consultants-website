@@ -2,7 +2,9 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import Markdown from "react-markdown";
 import postlist from "../posts.json";
-import Layout from "../components/Layout";
+import { Link } from 'react-router-dom';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import './styles/Post.scss';
 
 const Post = (props) => {
@@ -26,15 +28,18 @@ const Post = (props) => {
         return <Redirect to="/404" />
     }
     return (
-        <Layout>
-            <div className="post">
-                <h2>{fetchedPost.title}</h2>
-                <h3>{fetchedPost.category}</h3>
-                <p>Published on {fetchedPost.date}</p>
-                <hr/>
-                <Markdown source={fetchedPost.content} escapeHtml={false} />
+            <div className="background">
+                <Navbar />
+                    <div className="post">
+                        <h1>{fetchedPost.title}</h1>
+                        <h2>{fetchedPost.description}</h2>
+                        <Link to="/insights" className="insights-link">Back to Insights</Link><Link to="/insights" className="insights-link">{fetchedPost.category}</Link>
+                        <p className="date">Published on {fetchedPost.date}</p>
+                        <hr/>
+                        <Markdown source={fetchedPost.content} escapeHtml={false} />
+                    </div>
+                <Footer />
             </div>
-        </Layout>
     )
 }
 
