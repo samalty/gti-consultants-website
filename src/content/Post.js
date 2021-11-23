@@ -16,11 +16,12 @@ const Post = (props) => {
     let postExists = false
     postlist.forEach((post, i) => {
         if (validId === post.id) {
-            fetchedPost.title = post.title ? post.title : "No title given";
-            fetchedPost.category = post.category ? post.category : "No category given";
-            fetchedPost.description = post.description ? post.description : "No description given";
-            fetchedPost.date = post.date ? post.date : "No date given";
-            fetchedPost.content = post.content ? post.content : "No content given";
+            fetchedPost.title = post.title ? post.title : "Title not found";
+            fetchedPost.category = post.category ? post.category : "";
+            fetchedPost.description = post.description ? post.description : "Description not found";
+            fetchedPost.date = post.date ? post.date : "Date not found";
+            fetchedPost.thumbnail = post.thumbnail ? post.thumbnail : "Image not found";
+            fetchedPost.content = post.content ? post.content : "Content not found";
             postExists = true;
         }
     })
@@ -31,9 +32,12 @@ const Post = (props) => {
             <div className="background">
                 <Navbar />
                     <div className="post">
-                        <h1>{fetchedPost.title}</h1>
-                        <h2>{fetchedPost.description}</h2>
-                        <Link to="/insights" className="insights-link">Back to Insights</Link><Link to="/insights" className="insights-link">{fetchedPost.category}</Link>
+                        <div className="title-container">
+                            <h1>{fetchedPost.title}</h1>
+                        </div>
+                        <img src={fetchedPost.thumbnail}/>
+                        <h3>{fetchedPost.description}</h3>
+                        <Link to="/insights" className="insights-link">Back to Insights</Link><Link to={`/insights/${fetchedPost.category}`} className="insights-link">{fetchedPost.category}</Link>
                         <p className="date">Published on {fetchedPost.date}</p>
                         <hr/>
                         <Markdown source={fetchedPost.content} escapeHtml={false} />

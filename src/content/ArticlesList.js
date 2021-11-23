@@ -15,7 +15,7 @@ const ArticlesList = () => {
                 postList.map((post, i) => {
                     return (
                         <div key={i} className="article">
-                            <Link className="links" to={`/insights/${post.id}`}>
+                            <Link className="links" to={`/insights/${post.category}/${post.id}`} style={{ textDecoration: 'none' }}>
                                 <div className="article-overlay">
                                     <h2>{post.title}</h2>
                                     <p>{post.description}</p>

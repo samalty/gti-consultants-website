@@ -37,12 +37,14 @@ class Insights extends Component {
                     <div className="categories">
                         <div className="categories-container">
                             <h2>Browse by category</h2>
+                            <Link className="links" to={`/insights/accounting`} style={{ textDecoration: 'none' }}>
+                                <button className="category">Accounting</button>
+                            </Link>
                             <button className="category">Making a claim</button>
                             <button className="category">Eligibility</button>
                             <button className="category">HMRC</button>
                             <button className="category">Qualifying activities</button>
                             <button className="category">Qualifying expenditure</button>
-                            <button className="category">Accounting</button>
                         </div>
                     </div>
                     <div className="case-studies">
