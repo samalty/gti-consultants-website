@@ -1,7 +1,7 @@
 import React from "react";
 import { Link }  from "react-router-dom";
 import postList from "../posts.json";
-import Markdown from "react-markdown";
+//import Markdown from "react-markdown";
 import './styles/Category.scss';
 import CategoryTemplate from "./CategoryTemplate";
 
