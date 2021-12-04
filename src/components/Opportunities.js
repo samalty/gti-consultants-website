@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Opportunities.scss';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import Accordion from './Accordion';
-import Footer from './Footer';
+import Footer from './footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { OpportunitiesData } from './data/OpportunitiesData';

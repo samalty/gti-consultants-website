@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Tabs, Tab, TabList, TabPanel } from 'react-tabs';
 import './styles/Insights.scss';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 import ArticlesList from './ArticlesList';
 import CaseStudiesData from '../components/data/CaseStudiesData';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 
 class Insights extends Component {
     constructor(props){

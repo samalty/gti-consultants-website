@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './styles/Contact.scss';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import emailjs from 'emailjs-com';
 import MapComponent from './Map';
-import Footer from './Footer';
+import Footer from './footer';
 
 class Contact extends Component {
     sendEmail = (e) => {

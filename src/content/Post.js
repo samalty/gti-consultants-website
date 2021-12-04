@@ -3,8 +3,8 @@ import { Redirect } from "react-router-dom";
 import Markdown from "react-markdown";
 import postlist from "../posts.json";
 import { Link } from 'react-router-dom';
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import './styles/Post.scss';
 
 const Post = (props) => {

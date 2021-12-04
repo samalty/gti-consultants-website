@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/About.scss';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './navbar';
+import Footer from './footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import about from './media/about.jpg';
