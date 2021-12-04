@@ -1,14 +1,10 @@
 import React from "react";
 import { Link }  from "react-router-dom";
 import postList from "../posts.json";
-//import Markdown from "react-markdown";
 import './styles/Category.scss';
 import CategoryTemplate from "./CategoryTemplate";
 
 const Accounting = () => {
-    const excerptList = postList.map(post => {
-        return post.content.split(" ").slice(0, 20).join(" ") + "..."
-    });
     return (
         <CategoryTemplate>
             <div className="articles-container">

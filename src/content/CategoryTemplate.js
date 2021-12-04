@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles/_Themes.scss';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';

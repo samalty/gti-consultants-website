@@ -38,7 +38,7 @@ const Post = (props) => {
                         <div className="title-container">
                             <h1>{fetchedPost.title}</h1>
                         </div>
-                        <img src={fetchedPost.thumbnail}/>
+                        <img src={fetchedPost.thumbnail} alt="img" />
                         <h3>{fetchedPost.description}</h3>
                         <Link to="/insights" className="insights-link">Back to Insights</Link><Link to={fetchedPost.categoryRoute} className="insights-link">Back to {fetchedPost.category}</Link>
                         <p className="date">Published on {fetchedPost.date}</p>
