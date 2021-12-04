@@ -4,7 +4,6 @@ import './styles/Navbar.scss';
 import logo from './media/logo-small.png';
 import { NavbarData } from './data/NavbarData';
 
-
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
