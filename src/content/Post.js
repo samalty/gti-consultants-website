@@ -12,8 +12,8 @@ const Post = (props) => {
     if (!validId) {
         return <Redirect to="/404" />
     }
-    const fetchedPost = {}
-    let postExists = false
+    const fetchedPost = {};
+    let postExists = false;
     postlist.forEach((post, i) => {
         if (validId === post.id) {
             fetchedPost.title = post.title ? post.title : "Title not found";
@@ -23,6 +23,9 @@ const Post = (props) => {
             fetchedPost.thumbnail = post.thumbnail ? post.thumbnail : "Image not found";
             fetchedPost.content = post.content ? post.content : "Content not found";
             postExists = true;
+        }
+        if (fetchedPost.category === "Accounting\r") {
+            fetchedPost.categoryRoute = `/insights/accounting`
         }
     })
     if (postExists === false) {
@@ -37,7 +40,7 @@ const Post = (props) => {
                         </div>
                         <img src={fetchedPost.thumbnail}/>
                         <h3>{fetchedPost.description}</h3>
-                        <Link to="/insights" className="insights-link">Back to Insights</Link><Link to={`/insights/${fetchedPost.category}`} className="insights-link">{fetchedPost.category}</Link>
+                        <Link to="/insights" className="insights-link">Back to Insights</Link><Link to={fetchedPost.categoryRoute} className="insights-link">Back to {fetchedPost.category}</Link>
                         <p className="date">Published on {fetchedPost.date}</p>
                         <hr/>
                         <Markdown source={fetchedPost.content} escapeHtml={false} />

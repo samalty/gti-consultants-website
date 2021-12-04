@@ -2,7 +2,7 @@
 title: Research and development tax incentive explained
 category: Accounting
 description: R&D tax credits encourage businesses to find innovative solutions to current problems by way of a financial reward.
-date: 2021-11-18T11:50:02.255Z
+date: 2021-12-04T15:21:09.255Z
 thumbnail: /images/insights.jpg
 ---
 
