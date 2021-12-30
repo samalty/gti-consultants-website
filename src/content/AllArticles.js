@@ -1,22 +1,22 @@
 import React from "react";
 import { Link }  from "react-router-dom";
 import postList from "../posts.json";
-import './styles/Category.scss';
-import CategoryTemplate from "./CategoryTemplate";
+import './styles/AllArticles.scss';
+import AllArticlesTemplate from "./AllArticlesTemplate";
 
-const Accounting = () => {
+const AllArticles = () => {
     return (
-        <CategoryTemplate>
+        <AllArticlesTemplate>
             <div className="articles-container">
-                <h1>Accounting</h1>
+                <h1>All Articles</h1>
                 {postList.length && 
-                    postList.filter(post => post.category === "Accounting\r").map((post, i) => {
+                    postList.map((post, i) => {
                         return (
                             <div key={i} className="article">
                                 <h2>{post.title}</h2>
                                 <hr />
                                 <p>{post.description}</p>
-                                <Link className="links" to={`/insights/${post.category}/${post.id}`} style={{ textDecoration: 'none' }}>
+                                <Link className="links" to={`/insights/${post.category.toLowerCase()}/${post.id}`} style={{ textDecoration: 'none' }}>
                                     <p className="read-more">Read more</p>
                                 </Link>
                             </div>
@@ -24,8 +24,8 @@ const Accounting = () => {
                     })
                 }
             </div>
-        </CategoryTemplate>
+        </AllArticlesTemplate>
     )
 }
 
-export default Accounting;
+export default AllArticles;

@@ -3,8 +3,8 @@ import { Redirect } from "react-router-dom";
 import Markdown from "react-markdown";
 import postlist from "../posts.json";
 import { Link } from 'react-router-dom';
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import './styles/Post.scss';
 
 const Post = (props) => {
@@ -24,9 +24,6 @@ const Post = (props) => {
             fetchedPost.content = post.content ? post.content : "Content not found";
             postExists = true;
         }
-        if (fetchedPost.category === "Accounting\r") {
-            fetchedPost.categoryRoute = `/insights/accounting`
-        }
     })
     if (postExists === false) {
         return <Redirect to="/404" />
@@ -40,7 +37,7 @@ const Post = (props) => {
                         </div>
                         <img src={fetchedPost.thumbnail} alt="img" />
                         <h3>{fetchedPost.description}</h3>
-                        <Link to="/insights" className="insights-link">Back to Insights</Link><Link to={fetchedPost.categoryRoute} className="insights-link">Back to {fetchedPost.category}</Link>
+                        <Link to="/insights" className="insights-link">Back to Insights</Link>
                         <p className="date">Published on {fetchedPost.date}</p>
                         <hr/>
                         <Markdown source={fetchedPost.content} escapeHtml={false} />

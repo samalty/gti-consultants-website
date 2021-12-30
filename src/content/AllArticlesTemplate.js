@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles/_Themes.scss';
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-const CategoryTemplate = ({children}) => {
+const AllArticlesTemplate = ({children}) => {
     return (
         <div className="background">
             <Navbar />
@@ -15,4 +15,4 @@ const CategoryTemplate = ({children}) => {
     )
 }
 
-export default CategoryTemplate;
+export default AllArticlesTemplate;

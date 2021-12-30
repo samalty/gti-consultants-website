@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/Claims.scss';
-import Navbar from './navbar';
-import Footer from './footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

@@ -39,8 +39,8 @@ h1{
 /* Main body */
 
 .insights-container{
+    text-align: center;
     .latest-articles{
-        text-align: center;
         .article{
             box-sizing: border-box;
             display: inline-block;
@@ -114,36 +114,25 @@ h1{
             }
         }
     }
-    .categories{
-        @media screen and (min-width: 600px) {
-            background: linear-gradient(20deg, #f7f7f7 10%, 0%, #ffffff 90%);
-        }
-        .categories-container{
-            text-align: center;
-            max-width: 1400px;
-            padding: 20px;
-            margin: 0 auto;
-            .category{
-                box-sizing: border-box;
-                width: 20%;
-                min-width: 240px;
-                max-width: 350px;
-                padding: 15px;
-                margin: 1%;
-                color: #004d00;
-                background-color: #ffffff;
-                font-size: 20px;
-                border: 2px solid #004d00;
-                cursor: pointer;
-                transition: 0.5s;
-                display: inline-block;
-                @include boxShadow();
-                &:hover{
-                    color: #ffffff;
-                    background-color: #004d00;
-                    transition: 1s;
-                }
-            }
+    .articles-link{
+        box-sizing: border-box;
+        width: 20%;
+        min-width: 240px;
+        max-width: 350px;
+        padding: 15px;
+        margin: 25px 0px;
+        color: #004d00;
+        background-color: #ffffff;
+        font-size: 20px;
+        border: 2px solid #004d00;
+        cursor: pointer;
+        transition: 0.5s;
+        display: inline-block;
+        @include boxShadow();
+        &:hover{
+            color: #ffffff;
+            background-color: #004d00;
+            transition: 1s;
         }
     }
     .case-studies{

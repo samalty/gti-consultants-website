@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Explained.scss';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import Calculator from './Calculator';
-import Footer from './footer';
+import Footer from './Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

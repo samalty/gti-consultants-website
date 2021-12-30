@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Tabs, Tab, TabList, TabPanel } from 'react-tabs';
 import './styles/Insights.scss';
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import ArticlesList from './ArticlesList';
 import CaseStudiesData from '../components/data/CaseStudiesData';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 class Insights extends Component {
     constructor(props){
@@ -34,19 +34,9 @@ class Insights extends Component {
                 </div>
                 <div className="insights-container">
                     <ArticlesList/>
-                    <div className="categories">
-                        <div className="categories-container">
-                            <h2>Browse by category</h2>
-                            <Link className="links" to={`/insights/accounting`} style={{ textDecoration: 'none' }}>
-                                <button className="category">Accounting</button>
-                            </Link>
-                            <button className="category">Making a claim</button>
-                            <button className="category">Eligibility</button>
-                            <button className="category">HMRC</button>
-                            <button className="category">Qualifying activities</button>
-                            <button className="category">Qualifying expenditure</button>
-                        </div>
-                    </div>
+                    <Link className="links" to={`/insights/articles`} style={{ textDecoration: 'none' }}>
+                        <button className="articles-link">Browse All Articles</button>
+                    </Link>
                     <div className="case-studies">
                         <div className="case-studies-container">
                             <h2>Case studies</h2>
