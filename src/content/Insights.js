@@ -14,6 +14,9 @@ class Insights extends Component {
             caseStudy: 1
         }
     }
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     toggleTab = (item) => {
         this.setState({ caseStudy: item.id });
     }

@@ -2,13 +2,12 @@ export const OpportunitiesData = [
     {
         title: 'R&D Tax Relief',
         icon: 'fas fa-microscope',
-        description1:`Research & Development (R&D) Tax Relief exists to supplement innovation within the UK economy by incentivising 
-                      investment in research and development. SMEs can claim a 230% Corporation Tax deduction on qualifying R&D costs 
-                      or a tax credit of up to 14.5% of a surrenderable loss. Under the RDEC scheme, large companies can claim an 
-                      expenditure credit worth 13% of qualifying costs.`,
-        description2:`Our specialists have helped hundreds of companies utilise R&D Tax Relief to support their ventures. Our 
-                      comprehensive and personal approach promises to maximise the value of your claim, providing the perfect 
-                      platform for future growth.`,
+        description1:`R&D Tax Relief exists to supplement innovation within the UK economy by incentivising investment in research 
+                      and development. SMEs can claim a 230% Corporation Tax deduction on qualifying R&D costs or a tax credit of 
+                      up to 14.5% of a surrenderable loss. Under the RDEC scheme, large companies can claim an expenditure credit worth 
+                      13% of qualifying costs.`,
+        description2:`Our specialists have helped hundreds of companies support their ventures through R&D Tax Relief, while our 
+                      comprehensive approach promises to maximise the value of your claim, providing the perfect platform for future growth.`,
         path: '/contact',
         open: true,
         cName: 'incentive-desc'

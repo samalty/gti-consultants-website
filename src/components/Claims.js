@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 
 class Claims extends Component {
     componentDidMount() {
+        window.scrollTo(0,0);
         Aos.init({
             duration: 1000
         });

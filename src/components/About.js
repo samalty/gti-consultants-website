@@ -8,6 +8,7 @@ import about from './media/about.jpg';
 
 class About extends Component {
     componentDidMount() {
+        window.scrollTo(0,0);
         Aos.init({
             duration: 1000
         });

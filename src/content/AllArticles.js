@@ -5,6 +5,7 @@ import './styles/AllArticles.scss';
 import AllArticlesTemplate from "./AllArticlesTemplate";
 
 const AllArticles = () => {
+    window.scrollTo(0,0);
     return (
         <AllArticlesTemplate>
             <div className="articles-container">

@@ -6,6 +6,9 @@ import MapComponent from './Map';
 import Footer from './Footer';
 
 class Contact extends Component {
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
     sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_zepw0sx', 'template_dg2wopv', e.target, 'user_VikgK2snrTIxEEcobaKqc')

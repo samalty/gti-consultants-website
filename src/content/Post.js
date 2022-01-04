@@ -8,7 +8,8 @@ import Footer from "../components/Footer";
 import './styles/Post.scss';
 
 const Post = (props) => {
-    const validId = parseInt(props.match.params.id)
+    window.scrollTo(0,0);
+    const validId = parseInt(props.match.params.id);
     if (!validId) {
         return <Redirect to="/404" />
     }

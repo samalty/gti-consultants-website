@@ -16,6 +16,7 @@ import marginGrey from './media/margin-grey.png';
 
 class Home extends Component {
     componentDidMount() {
+        window.scrollTo(0,0);
         Aos.init({
             duration: 2000
         });

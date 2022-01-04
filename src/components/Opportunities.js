@@ -10,6 +10,7 @@ import { OpportunitiesData } from './data/OpportunitiesData';
 
 class Opportunities extends Component {
     componentDidMount() {
+        window.scrollTo(0,0);
         Aos.init({
             duration: 1000
         });
