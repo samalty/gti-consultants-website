@@ -36,7 +36,9 @@ class Home extends Component {
                             <h3 className="intro-text">We provide pioneering UK companies with optimised, tailored guidance, helping them 
                                 to supplement growth and innovation by leveraging government support for their work.</h3>
                             <br></br>
-                            <button className="btn">BOOK A FREE CONSULTATION</button>
+                            <Link to="/contact">
+                                <button className="btn">BOOK A FREE CONSULTATION</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -93,7 +95,9 @@ class Home extends Component {
                                 <h2>Testimonials</h2>
                                 <Testimonials />
                             </div>
-                            <button className="consultation">BOOK A FREE CONSULTATION</button>
+                            <Link to="/contact" className="contact-link">
+                                <button className="consultation">BOOK A FREE CONSULTATION</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

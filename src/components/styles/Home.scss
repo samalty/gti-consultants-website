@@ -114,6 +114,7 @@ h1,h2,h3,h4,h5,p{
 .btn{
     padding: 20px;
     background: transparent;
+    text-decoration: none;
     border: 2px solid #666666;
     color: #666666;
     font-size: 16px;
@@ -471,6 +472,9 @@ h1,h2,h3,h4,h5,p{
 
 /* Consultation button */
 
-.consultation{
-    @include consultationButton();
+.contact-link{
+    text-decoration: none;
+    .consultation{
+        @include consultationButton();
+    }
 }
