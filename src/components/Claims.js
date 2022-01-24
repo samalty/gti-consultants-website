@@ -17,14 +17,14 @@ class Claims extends Component {
             <div className="background">
                 <Navbar />
                 <div className="header-container">
-                    <h1>Making a claim with GTIC</h1>
+                    <h1>Making a claim</h1>
                 </div>
                 <div className="claims-intro-container">
                     <div className="claims-overlay">
                         <div className="claims-intro">
-                            <h3>A claim with GTIC promises maximum value and total transparency. Our rigorous claims process blueprint is
-                                designed to identify and capitalise on all available opportunities, while keeping you in the loop every 
-                                step of the way.</h3>
+                            <h3>We promise maximum value and total transparency. Our rigorous claims process blueprint is designed to 
+                                identify and capitalise on all available opportunities, while keeping you in the loop every step of 
+                                the way.</h3>
                         </div>
                     </div>
                 </div>

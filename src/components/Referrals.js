@@ -22,9 +22,9 @@ class Referrals extends Component {
                 <div className="referrals-intro-container">
                     <div className="referrals-overlay">
                         <div className="referrals-intro">
-                            <h3>We give accountants the insight and assistance needed to offer valuable R&D services. Referring a 
-                                client to us maximises the potential of their R&D activity while providing you with expertise 
-                                underpinning your own added-value service.</h3>
+                            <h3>If a client of yours is undertaking R&D, referring them to us maximises the potential of their 
+                                activity while providing you with expertise and assistance underpinning your own added-value R&D 
+                                service.</h3>
                         </div>
                     </div>
                 </div>

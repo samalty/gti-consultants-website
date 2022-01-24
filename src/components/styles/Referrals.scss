@@ -221,8 +221,11 @@ h1{
         }
     }
     .one{
-        top: 135px;
+        top: 0px;
         left: 0px;
+        @media screen and (min-width: 1000px) {
+            top: 135px;
+        }
     }
     .two{
         @media screen and (min-width: 1000px) {
