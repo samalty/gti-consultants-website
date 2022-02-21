@@ -38,7 +38,7 @@ class Home extends Component {
                                     to supplement growth and innovation by leveraging government support for their work.</h3>
                                 <br></br>
                                 <Link to="/contact">
-                                    <button className="btn">BOOK A FREE CONSULTATION</button>
+                                    <button className="btn">BOOK A CONSULTATION</button>
                                 </Link>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ class Home extends Component {
                                 <Testimonials />
                             </div>
                             <Link to="/contact" className="contact-link">
-                                <button className="consultation">BOOK A FREE CONSULTATION</button>
+                                <button className="consultation">BOOK A CONSULTATION</button>
                             </Link>
                         </div>
                     </div>

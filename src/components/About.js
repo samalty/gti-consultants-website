@@ -45,7 +45,7 @@ class About extends Component {
                         <img src={about} alt="Partnering with GTIC" className="about-img"></img>         
                     </div>
                     <p>We partner with emerging and established companies of all sizes that aspire to add something new to their industry. 
-                       Specialising in the IT, engineering and manufacturing sectors, our team of experts has helped more than 250 
+                       Specialising in the IT, engineering and manufacturing sectors, our team of experts have helped more than 250 
                        businesses secure various forms of valuable relief, providing a gateway to growth and further development.</p>
                     <p>Our combined experience covers a wealth of grants and incentives, including R&D Tax Relief and Patent Box, making 
                        us better placed than most to help businesses identify and make the most of relevant opportunities.</p>

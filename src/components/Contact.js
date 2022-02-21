@@ -30,9 +30,9 @@ class Contact extends Component {
                 <div className="intro-container">
                     <div className="contact-intro">
                         <h3>Interested to find out whether the work you undertake qualifies for a government incentive?</h3>
-                        <p>Request a free consultation via the contact form. We can assess your eligibility, share expert insight, and 
+                        <p>Request a consultation via the contact form. We can assess your eligibility, share expert insight, and 
                            potentially begin preparing your platform for future growth.</p>
-                        <p>Alternatively, call 020 3959 8332 to speak to one of our expert advisors.</p>
+                        <p>Alternatively, call 020 3582 5526 to speak to one of our expert advisors.</p>
                     </div>
                     <div className="form-container">
                         <form onSubmit={this.sendEmail}>

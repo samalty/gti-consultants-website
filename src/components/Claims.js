@@ -92,8 +92,8 @@ class Claims extends Component {
                         <p>Upon your approval, we file your completed claim report with HMRC, and either incorporate the R&D Tax Relief 
                             calculation into your Corporation Tax return or assist your accountant in doing so.</p>
                         <p>Our claim reports far exceed the compliance standards expected by HMRC, so the risk of an enquiry is minimal. 
-                            However, in the unlikely event that the taxman conducts a compliance check, we will exercise our experience 
-                            of closing down enquiries at no extra cost.</p>
+                            However, in the unlikely event that HMRC conducts a compliance check, we will exercise our experience of 
+                            closing down enquiries at no extra cost.</p>
                     </div>
                 </div>
                 <Footer />
